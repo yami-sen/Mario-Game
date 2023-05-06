@@ -5,6 +5,8 @@ const c = canvas.getContext("2d");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 const gravity = 1.5;
+// const image = new Image();
+// image.Src = background;
 
 class Player {
   constructor() {
@@ -22,6 +24,7 @@ class Player {
   draw() {
     c.fillStyle = "red";
     c.fillRect(this.position.x, this.position.y, this.width, this.height);
+    // drawImage()
   }
   update() {
     this.draw();
